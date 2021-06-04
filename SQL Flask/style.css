@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    padding: 60px;
+    background-image: url('img.jpg');
+    color: white;
+    font-size: 30px;
+}
+
+.make{
+
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    
+}
+.make a{
+
+    color: white;
+    padding: 15px;
+    margin-right: 15px;
+}
+.make #num{
+
+    margin-left: 75%;
+    padding: 15px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+.buy{
+
+    border: 2px solid black;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 15px;
+    line-height: 35px;
+
+}
+
+input[type = submit]{
+
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border: none;
+
+}
+
+#circle{
+
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 35px;
+    background-color: black;
+
+}
+
+#test{
+
+    display: flex;
+    border: 2px solid black;
+    background-color: black;
+}
