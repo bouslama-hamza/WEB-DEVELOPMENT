@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content%}
+<form action="/contact" , method="POST">
+<input type="button" value="+" id="plus" onclick="getInputValue();location ='/contact'">
+<div class="message">
+    <label for="Name"> Nom</label><br>
+    <input type="text" name="name" id="name" required><br>
+    <label for="Name"> Email</label><br>
+    <input type="text" name="Email" id="Email" required><br>
+    <label for="Name"> Rate</label><br>
+    <select name="" id="">
+        <option value="one" selected>1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+    </select><br>
+    <label for="Message">Message</label><br>
+    <textarea name="message" id="message" cols="60" rows="15" required></textarea><br>
+    <button> Send</button>   
+</div>
+<div class="rest" id="rest">
+    {% if test %}
+        {% for i in test %}
+        <h1>{{test[i]}}</h1><br>
+        {% endfor %}
+    {% endif %}
+</div>
+</form>
+<script src="{{url_for('static' , filename='JS/contact.js')}}"></script>
+{% endblock content%}

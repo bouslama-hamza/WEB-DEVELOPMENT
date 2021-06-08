@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block stace%}
+<div class="header">
+<h1 style="margin-right: 40px;
+            background-image: url('static/images/img.jpg');
+            width: 100%;">My Store</h1>
+</div>
+{% endblock stace%}
+{% block content%}
+<div class="buy">
+    <a href="/produit"><img src="{{url_for('static' , filename = 'images/img2.jpeg')}} " style="height: 200px; margin-left: 50px;"></a>
+    
+    <div class="test">
+        <p> Dell Latitud E73200 </p>
+        <p>7500 DH</p>
+        <p>i7 Ram 8G SSD 1T </p>
+    </div>
+    <div id="test">
+        <input type="submit" id="submit" value="Add to Cart">
+        <div id="circle"></div>
+    </div>
+</div>
+{% endblock content%}
