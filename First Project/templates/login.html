@@ -1,0 +1,12 @@
+{% extends "basic.html"%}
+{% block content%}
+<div class="window">
+    <form action="/game" method="POST">
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" id="myInput" required>
+        <p class="text"></pclass> <input type="checkbox" onclick="myFunction()"> show password</p>
+        <input type="submit" value="Login"><br><br>
+        <p class="text">Don't Have An Account ?<a href="/singup">singup</a></p>
+    </form>
+</div>
+{% endblock content%}

@@ -1,0 +1,12 @@
+{% extends "basic.html"%}
+{% block content%}
+<div class="window">
+    <form action="/" method="POST">
+        <input type="text" name="usersname" placeholder="username" required>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="c_password" placeholder="Confirm password" required>
+        <input type="submit" value="singup"><br><br>
+    </form>
+</div>
+{% endblock content%}
