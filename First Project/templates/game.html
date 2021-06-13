@@ -1,136 +1,146 @@
 {% extends "basic.html"%}
 {% block content%}
+<div class="rool">
+    <div class="rool_1">
+        <img src="static/images/dice-0.png" class="rool_c_1" id="rool_r"><button id="rool_r_1">ROOL</button>
+        <img src="static/images/dice-0.png" class="rool_c_2" id="rool_g"><button id="rool_g_1">ROOL</button>
+    </div>
     <div class="game">
         <div class="border">
-            <div class="b_1">
+            <div class="b_1" id="b_1">
                 <div class="b_c">
-                    <div class="b_c_1"><button class="btn_1">&#9733;</button></div>
-                    <div class="b_c_2"><button class="btn_1">&#9733;</button></div>
-                    <div class="b_c_3"><button class="btn_1">&#9733;</button></div>
-                    <div class="b_c_4"><button class="btn_1">&#9733;</button></div>
+                    <div class="b_c_1"><button class="btn_1" id="btn_r_1">&#9733;</button></div>
+                    <div class="b_c_2"><button class="btn_1" id="btn_r_2">&#9733;</button></div>
+                    <div class="b_c_3"><button class="btn_1" id="btn_r_3">&#9733;</button></div>
+                    <div class="b_c_4"><button class="btn_1" id="btn_r_4">&#9733;</button></div>
                 </div>
             </div>
             <div class="b_1_2">
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c" style="color:rgb(56, 56, 240); font-size: 25px;">&#8595;</div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c"></div>
+                <div class="b_1_2_c" id="p_12"></div>
+                <div class="b_1_2_c" id="p_13" style="color:rgb(56, 56, 240); font-size: 25px;">&#8595;</div>
+                <div class="b_1_2_c" id="p_14"></div>
+                <div class="b_1_2_c" id="p_11"></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
+                <div class="b_1_2_c" id="p_15" style="background-color:rgb(56, 56, 240);"></div>
+                <div class="b_1_2_c" style="background-color: rgb(173, 173, 173);"><div id="p_10" class="no_touch"></div></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c" style="background-color: rgb(173, 173, 173);"><div class="no_touch"></div></div>
+                <div class="b_1_2_c" id="p_16"></div>
+                <div class="b_1_2_c" id="p_9"></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c"></div>
+                <div class="b_1_2_c" id="p_17"></div>
+                <div class="b_1_2_c" id="p_8"></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c"></div>
+                <div class="b_1_2_c" id="p_18"></div>
+                <div class="b_1_2_c" id="p_7"></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c"></div>
+                <div class="b_1_2_c" id="p_19"></div>
+                <div class="b_1_2_c" id="p_6"></div>
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c"></div>
-                <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
-                <div class="b_1_2_c"></div>
+                <div class="b_1_2_c" id="p_20"></div>
             </div>
             <div class="b_2">
                 <div class="b_c">
-                    <div class="b_c_1"><button class="btn_2">&#10057;</button></div>
-                    <div class="b_c_2"><button class="btn_2">&#10057;</button></div>
-                    <div class="b_c_3"><button class="btn_2">&#10057;</button></div>
-                    <div class="b_c_4"><button class="btn_2">&#10057;</button></div>
+                    <div class="b_c_1"><button class="btn_2" id="btn_b_1">&#10057;</button></div>
+                    <div class="b_c_2"><button class="btn_2" id="btn_b_2">&#10057;</button></div>
+                    <div class="b_c_3"><button class="btn_2" id="btn_b_3">&#10057;</button></div>
+                    <div class="b_c_4"><button class="btn_2" id="btn_b_4">&#10057;</button></div>
                 </div>
             </div>
             <div class="b_2_3">
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c" style="color: red; font-size: 30px;">&#8594;</div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c" style="background-color: red;"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c" style="background-color: rgb(173, 173, 173);"><div class="no_touch"></div></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
-                <div class="b_2_3_c"></div>
+                <div class="b_2_3_c" id="p_59"></div>
+                <div class="b_2_3_c" id="p_60" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_1"></div>
+                <div class="b_2_3_c" id="p_2"></div>
+                <div class="b_2_3_c" id="p_3"></div>
+                <div class="b_2_3_c" id="p_4"></div>
+                <div class="b_2_3_c" id="p_5"></div>
+                <div class="b_2_3_c" id="p_58" style="color: red; font-size: 30px;">&#8594;</div>
+                <div class="b_2_3_c" id="p_r_1" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_r_2" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_r_3" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_r_4" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_r_5" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_r_6" style="background-color: red;"></div>
+                <div class="b_2_3_c" id="p_57"></div>
+                <div class="b_2_3_c" id="p_56"></div>
+                <div class="b_2_3_c" style="background-color: rgb(173, 173, 173);"><div id="p_55" class="no_touch"></div></div>
+                <div class="b_2_3_c" id="p_54"></div>
+                <div class="b_2_3_c" id="p_53"></div>
+                <div class="b_2_3_c" id="p_52"></div>
+                <div class="b_2_3_c" id="p_51"></div>
             </div>
             <div class="b_center">
                 <div class="triangle-down"></div>
                 <div class="triangle-right"></div>
-                <div class="triangle-up"></div>
+                <div id="p_r_7" class="triangle-up"></div>
             </div>
             <div class="b_3_4">
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c" style="background-color: rgb(173, 173, 173);"><div class="no_touch"></div></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
+                <div class="b_3_4_c" id="p_21"></div>
+                <div class="b_3_4_c" id="p_22"></div>
+                <div class="b_3_4_c" id="p_23"></div>
+                <div class="b_3_4_c" id="p_24"></div>
+                <div class="b_3_4_c" style="background-color: rgb(173, 173, 173);"><div id="p_25" class="no_touch"></div></div>
+                <div class="b_3_4_c" id="p_26"></div>
+                <div class="b_3_4_c" id="p_27"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
                 <div class="b_3_4_c" style="background-color : yellow"></div>
-                <div class="b_3_4_c" style="color: rgb(196, 196, 0); font-size: 30px;">&#8592;</div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c"></div>
-                <div class="b_3_4_c" style="background-color : yellow"></div>
-                <div class="b_3_4_c"></div>
+                <div class="b_3_4_c" id="p_28" style="color: rgb(196, 196, 0); font-size: 30px;">&#8592;</div>
+                <div class="b_3_4_c" id="p_35"></div>
+                <div class="b_3_4_c" id="p_34"></div>
+                <div class="b_3_4_c" id="p_33"></div>
+                <div class="b_3_4_c" id="p_32"></div>
+                <div class="b_3_4_c" id="p_31"></div>
+                <div class="b_3_4_c" id="p_30" style="background-color : yellow"></div>
+                <div class="b_3_4_c" id="p_29"></div>
             </div>
             <div class="b_3">
                 <div class="b_c">
-                    <div class="b_c_1"><button class="btn_3">&#10050;</button></div>
-                    <div class="b_c_2"><button class="btn_3">&#10050;</button></div>
-                    <div class="b_c_3"><button class="btn_3">&#10050;</button></div>
-                    <div class="b_c_4"><button class="btn_3">&#10050;</button></div>
+                    <div class="b_c_1"><button class="btn_3" id="btn_g_1">&#10050;</button></div>
+                    <div class="b_c_2"><button class="btn_3" id="btn_g_2">&#10050;</button></div>
+                    <div class="b_c_3"><button class="btn_3" id="btn_g_3">&#10050;</button></div>
+                    <div class="b_c_4"><button class="btn_3" id="btn_g_4">&#10050;</button></div>
                 </div>
             </div>
             <div class="b_4_5">
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_50"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_36"></div>
+                <div class="b_4_5_c" id="p_49"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_37"></div>
+                <div class="b_4_5_c" id="p_48"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_38"></div>
+                <div class="b_4_5_c" id="p_47"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_39"></div>
+                <div class="b_4_5_c" id="p_46"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c" style="background-color: rgb(173, 173, 173);"><div class="no_touch"></div></div>
+                <div class="b_4_5_c" style="background-color: rgb(173, 173, 173);"><div id="p_40" class="no_touch"></div></div>
+                <div class="b_4_5_c" id="p_45" style="background-color: green;"></div>
                 <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c" style="background-color: green;"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c"></div>
-                <div class="b_4_5_c" style="color: green;font-size: 30px;">&#8593;</div>
-                <div class="b_4_5_c"></div>
+                <div class="b_4_5_c" id="p_41"></div>
+                <div class="b_4_5_c" id="p_44"></div>
+                <div class="b_4_5_c" id="p_43" style="color: green;font-size: 30px;">&#8593;</div>
+                <div class="b_4_5_c" id="p_42"></div>
             </div>
             <div class="b_4">
                 <div class="b_c">
-                    <div class="b_c_1"><button class="btn_4">&#934;</button></div>
-                    <div class="b_c_2"><button class="btn_4">&#934;</button></div>
-                    <div class="b_c_3"><button class="btn_4">&#934;</button></div>
-                    <div class="b_c_4"><button class="btn_4">&#934;</button></div>
+                    <div class="b_c_1"><button class="btn_4" id="btn_y_1">&#934;</button></div>
+                    <div class="b_c_2"><button class="btn_4" id="btn_y_2">&#934;</button></div>
+                    <div class="b_c_3"><button class="btn_4" id="btn_y_3">&#934;</button></div>
+                    <div class="b_c_4"><button class="btn_4" id="btn_y_4">&#934;</button></div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="rool_1">
+        <img src="static/images/dice-0.png" class="rool_c_1" id="rool_b"><button id="rool_b_1">ROOL</button>
+        <img src="static/images/dice-0.png" class="rool_c_2" id="rool_y"><button id="rool_y_1">ROOL</button>
+    </div>
+</div>
 {% endblock content%}
