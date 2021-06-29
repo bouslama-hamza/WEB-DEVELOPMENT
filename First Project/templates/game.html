@@ -1,13 +1,30 @@
 {% extends "basic.html"%}
 {% block content%}
-<div class="rool">
+<div id="song">
+    <audio id="dice_song">
+        <source src="{{url_for('static',filename = 'sounds/dice.mp3')}}" type="audio/mpeg">
+    </audio>
+    <audio id="inout_song">
+        <source src="{{url_for('static',filename = 'sounds/inout.mp3')}}" type="audio/mpeg">
+    </audio>
+    <audio id="kille_song">
+        <source src="{{url_for('static',filename = 'sounds/killed.mp3')}}" type="audio/mpeg">
+    </audio>
+    <audio id="step_song">
+        <source src="{{url_for('static',filename = 'sounds/step.mp3')}}" type="audio/mpeg">
+    </audio>
+    <audio id="win_song">
+        <source src="{{url_for('static',filename = 'sounds/win.mp3')}}" type="audio/mpeg">
+    </audio>
+</div>
+<div class="rool" id="rool">
     <div class="rool_1">
         <img src="static/images/dice-0.png" class="rool_c_1" id="rool_r"><button id="rool_r_1">ROOL</button>
         <img src="static/images/dice-0.png" class="rool_c_2" id="rool_g"><button id="rool_g_1">ROOL</button>
     </div>
     <div class="game">
-        <div class="border">
-            <div class="b_1" id="b_1">
+        <div class="border" id="border">
+            <div class="b_1" id="b">
                 <div class="b_c">
                     <div class="b_c_1"><button class="btn_1" id="btn_r_1">&#9733;</button></div>
                     <div class="b_c_2"><button class="btn_1" id="btn_r_2">&#9733;</button></div>
@@ -38,7 +55,7 @@
                 <div class="b_1_2_c" style="background-color:rgb(56, 56, 240);"></div>
                 <div class="b_1_2_c" id="p_20"></div>
             </div>
-            <div class="b_2">
+            <div class="b_2" id="b_1">
                 <div class="b_c">
                     <div class="b_c_1"><button class="btn_2" id="btn_b_1">&#10057;</button></div>
                     <div class="b_c_2"><button class="btn_2" id="btn_b_2">&#10057;</button></div>
@@ -97,7 +114,7 @@
                 <div class="b_3_4_c" id="p_30" style="background-color : yellow"></div>
                 <div class="b_3_4_c" id="p_29"></div>
             </div>
-            <div class="b_3">
+            <div class="b_3" id="b">
                 <div class="b_c">
                     <div class="b_c_1"><button class="btn_3" id="btn_g_1">&#10050;</button></div>
                     <div class="b_c_2"><button class="btn_3" id="btn_g_2">&#10050;</button></div>
@@ -128,7 +145,7 @@
                 <div class="b_4_5_c" id="p_43" style="color: green;font-size: 30px;">&#8593;</div>
                 <div class="b_4_5_c" id="p_42"></div>
             </div>
-            <div class="b_4">
+            <div class="b_4" id="b">
                 <div class="b_c">
                     <div class="b_c_1"><button class="btn_4" id="btn_y_1">&#934;</button></div>
                     <div class="b_c_2"><button class="btn_4" id="btn_y_2">&#934;</button></div>
