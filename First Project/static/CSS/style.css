@@ -72,10 +72,10 @@ input[type = submit]:hover{
     border: 1px solid black;
     width: 100px;
     height: 500px;
-    border: none;
     margin-top: 1px;
     padding: 13px;
     text-align: center;
+    border: none;
 }
 
 .rool_c_1{
@@ -94,6 +94,21 @@ input[type = submit]:hover{
     margin-top: 300px;
     border-radius: 15px;
     background-color: ivory; 
+}
+
+#rool_move_1,#rool_move_2{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
+#rool_move_3,#rool_move_4{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin-top: 400px;
+    border: none;
 }
 
 .game{
