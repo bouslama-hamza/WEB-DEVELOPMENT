@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel El Madina</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/main.css')}}">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <link rel = "icon" href="{{url_for('static' , filename = 'images/logo.png')}}" type = "image/png">
+</head>
+<body>
+        {% block content %}
+        {% endblock content %}
+    
+        <script src="{{url_for('static' , filename = 'JS/script.js')}}"></script>
+</body>
+</html>
