@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/style.css')}}">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <div class="nav_bar" id="myHeader">
+        <div class="nav_bar_lien">
+            <a class="nav_bar_iteam" id="nav_bar_1" href="/">ACCEUIL</a>
+            <a class="nav_bar_iteam" id="nav_bar_2" href="/about">A PROPRE</a>
+            <a class="nav_bar_iteam" id="nav_bar_3" href="/service">ANNONCE</a>
+            <a class="nav_bar_iteam" id="nav_bar_4" href="/contact">CONTACT</a>
+        </div>
+        <div class="back">
+            <img src="http://www.eauxetforets.gov.ma/AccueilAR/SiteAssets/Style-Arb/img/logo.png">
+        </div>
+    </div>
+    {% block content %}
+    {% endblock content %}
+    <div class="footer">
+        <div class="footer_link">
+            <div class="footer_about">
+                <h6 class="footer_all">À propos de la société</h6><br><br>
+                <p class="footer_info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, officia autem nulla animi non doloribus dicta esse? Nisi dolores esse vero</p>
+            </div>
+            <div class="footer_useful">
+                <h6 class="footer_all">Autre</h6><br>
+                <a class="footer_info_1" href="#">Acceuil</a><br>
+                <a class="footer_info_1" href="#">A propre</a><br>
+                <a class="footer_info_1" href="#">Service</a><br>
+                <a class="footer_info_1" href="#">Contact</a><br>
+            </div>
+            <div class="footer_service">
+                <h6 class="footer_all">Service</h6><br>
+                <a class="footer_info_1" href="#">Annonce</a><br>
+                <a class="footer_info_1" href="#">Departement</a><br>
+                <a class="footer_info_1" href="#">Delemitation</a><br>
+                <a class="footer_info_1" href="#">Multimedia</a><br>
+            </div>
+            <div class="footer_contact">
+                <h6 class="footer_all">Contact</h6><br>
+                <div class="footer_info_1">Essouira/Quariter Ras El MOl</div>
+                <div class="footer_info_1">+212 6 24 48 55 25</div>
+                <div class="footer_info_1">Essouira@gmail.com</div>
+            </div>
+        </div>
+        <div class="footer_email">
+            <div class="footer_text">
+                <h6 class="footer_all">Autre Question ?</h6><br>
+                <div class="footer_info_1">S'il vous plaît écrivez un e-mail et inscrivez-vous avec nous pour obtenir le droit d'écrire des commentaires</div>
+            </div>
+            <div class="footer_input">
+                <input type="email" placeholder="Votre Email Adresse" required>
+            </div>
+        </div>
+    </div>
+    <footer> Copyright © 2019 Le Département des Eaux et Forêts </footer>
+<script src="{{url_for('static' , filename = 'JS/script.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
