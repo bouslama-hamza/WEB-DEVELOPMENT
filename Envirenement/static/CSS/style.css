@@ -487,7 +487,7 @@ input[type=submit]:hover{
 }
 .new_all{
     border: 1px solid black;
-    height: 1400px;
+    height: 1300px;
     display: flex;
     justify-content: center;
     border: none;
@@ -512,16 +512,23 @@ input[type=submit]:hover{
     border: 1px solid black;
     height: 400px;
     width: 25%;
+    border: none;
 }
 .new_annon{
     border: 1px solid black;
     height: 400px;
     width: 72%;
+    border: none;
 }
 .new_focus{
     border: 1px solid black;
     height: 60px;
     margin-top: 25px;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    color: #ababab;
+    border: none;
+    font-size: 25px;
 }
 .new_info{
     border: 1px solid black;
@@ -536,7 +543,7 @@ input[type=submit]:hover{
     border: 1px solid black;
     width: 25%;
     height: 800px;
-    
+    border: none;
 }
 .new_info_right{
     border: 1px solid black;
@@ -551,15 +558,30 @@ input[type=submit]:hover{
     border: 1px solid black;
     width: 32%;
     height: 24%;
+    border: none;
 }
 .new_info_right_one{
     border: 1px solid black;
     width: 67%;
     height: 35%;
+    border: none;
 }
 .new_footer{
     border: 1px solid black;
     margin-top: 25px;
     width: 100%;
     height: 160px;
+    border: none;
+}
+.text_annon{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(44, 40, 40);
+    color: white;
+    opacity: 0.6;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    transition: 1s all linear;
+    z-index: -11;
 }
