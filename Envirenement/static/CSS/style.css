@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2)), url("../images/header/4.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2)), url("../images/header/2.jpg") center/cover no-repeat;
     min-height: 100vh;
     color: #fff;
     display: flex;
@@ -13,6 +13,14 @@ header{
 }
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2)), url("../images/header/6.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+.serv_header{
+    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.2)), url("../images/header/8.jpg") center/cover no-repeat;
     min-height: 100vh;
     color: #fff;
     display: flex;
@@ -100,7 +108,7 @@ a{
     margin-top: 5%;
     font-family: 'Barlow', sans-serif;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
 }
 .mini_title{
     font-family: 'Barlow', sans-serif;
@@ -175,6 +183,9 @@ a{
 }
 .about_border{
     border-radius: 12px;
+}
+.about_made{
+    margin-left: 30px;
 }
 .cataloge{
     display: flex;
@@ -304,9 +315,10 @@ footer{
     font-size: xx-large;
 }
 .footer_info{
-    line-height: 26px;
+    line-height: 40px;
     font-size:larger;
     color: #ababab;
+    text-transform: lowercase;
 }
 .footer_info_1{
     line-height: 50px;
@@ -378,7 +390,7 @@ ul{
     color: black;
     font-size: 17px;
     margin-top: 11%;
-    line-height: 6vh;
+    line-height: 8vh;
     margin-left: 3%;
 }
 h2{
@@ -584,4 +596,13 @@ input[type=submit]:hover{
     border: none;
     transition: 1s all linear;
     z-index: -11;
+}
+.carousel-cell{
+    position: relative;
+    text-align: center;
+}
+.check{
+    position: absolute;
+    top: 15px;
+    left:15px
 }

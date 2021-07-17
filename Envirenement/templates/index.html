@@ -4,8 +4,8 @@
     <div class="title">
         <h5>Département des <br> Eaux et Forêts</h5>
         <h3 class="mini_title">ETAPLISSEMENT ESSAOUIRA</h3>
-        <input class="btn_1" type="submit" value="A PROPRE">
-        <input class="btn_2" type="submit" value="CONTACT">
+        <a href="/about"><input class="btn_1" type="submit" value="A PROPRE"></a>
+        <a href="/contact"><input class="btn_2" style="color: green;background-color: white;" type="submit" value="CONTACT"></a>
     </div> 
     <div class="shape">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
@@ -21,68 +21,77 @@
     <div class="about_title">A Propre</div>
     <div class="about_text">
         <div class="about_text_1">
-            <div> 
+            <div class="about_made"> 
                 <h3 style="color: gray;">A PROPRE DE NOUS</h3><br>
                 <h2>Une équipe intégrée avec une grande expérience</h2><br>
-                <ul style="font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iste. Culpa voluptates libero molestiae est unde eos. Eum fugiat error saepe animi, odio natus qui quidem obcaecati, ullam magni quod!</ul>
+                <ul style="font-size: larger;">La Direction des Eaux et Forêts a pour objectif de fournir toutes les informations liées au domaine environnemental, la crédibilité et votre confort est notre objectif principal, sous la supervision de :</ul>
             </div>
             <div class="about_image">
                 <div class="about_image_1">
                     <img class="about_border" src="../static/images/about/s1.jpg" style="width:350px; height: 280px;">
-                    <h3 style="color: gray;margin-top: 30px;text-align: center;">A PROPRE DE NOTRE SERVICE</h3><br>
+                    <h3 style="line-height: 30px;color: gray;margin-top: 30px;text-align: center;">Une équipe intégrée et harmonieuse</h3><br>
                 </div>
                 <div class="about_image_2">
                     <img class="about_border" src="../static/images/about/s2.jpg" style="width:350px; height: 280px;">
-                    <h3 style="color: gray;margin-top: 30px;text-align: center;">A PROPRE DE NOTRE SERVICE</h3><br>
+                    <h3 style="line-height: 30px;color: gray;margin-top: 30px;text-align: center;">Programmeurs avec une grande expérience</h3><br>
                 </div>
                 <div class="about_image_3">
                     <img class="about_border" src="../static/images/about/s3.jpg" style="width:350px; height: 280px;">
-                    <h3 style="color: gray;margin-top: 30px;text-align: center;">A PROPRE DE NOTRE SERVICE</h3><br>
+                    <h3 style="line-height: 30px;color: gray;margin-top: 30px;text-align: center;">Un site à votre disposition toute la semaine</h3><br>
                 </div>
             </div>
         </div>
     </div>
+
+    <ul style="margin-left: 40px;font-size: larger;">De manière générale, la Direction des Eaux et Forêts a pour objectif de fournir une large gamme de services centrés sur la forme suivante :</ul>
+
     <div class="cataloge">
-        <div class="cataloge_1">
-            <div class="icon_1">
-                <img class="icon" src="{{url_for('static' , filename='images/icon/folder-solid.svg')}}">
-                <h4>APPELS D'OFFRES</h4>
-                <ul>Laborum similique iusto beatae facere illum architecto reiciendis vero facilis. Assumenda eos rerum obcaecati?</ul>
+            <div class="cataloge_1">
+                <a href="/contact">
+                    <div class="icon_1">
+                        <img class="icon" src="{{url_for('static' , filename='images/icon/folder-solid.svg')}}">
+                        <h4>APPELS D'OFFRES</h4>
+                        <ul>Si vous avez des questions ou des problèmes, nous mettons à votre disposition une page spéciale pour nous contacter</ul>
+                    </div>
+                </a>
             </div>
-        </div>
         <div class="cataloge_2">
-            <div class="icon_1">
-                <img class="icon" src="{{url_for('static' , filename='images/icon/database.svg')}}">
-                <h4>PUBLICATIONS</h4>
-                <ul>Laborum similique iusto beatae facere illum architecto reiciendis vero facilis. Assumenda eos rerum obcaecati?</ul>
-            </div>
+            <a href="/service">
+                <div class="icon_1">
+                    <img class="icon" src="{{url_for('static' , filename='images/icon/database.svg')}}">
+                    <h4>PUBLICATIONS</h4>
+                    <ul>L'objectif principal, comme mentionné ci-dessus, est de fournir des informations d'une manière plus flexible.Nous vous offrons un service intégré</ul>
+                </div>
+            </a>
         </div>
         <div class="cataloge_3">
-            <div class="icon_1">
-                <img class="icon" src="{{url_for('static' , filename='images/icon/user-friends.svg')}}">
-                <h4>ESPACE PARTENAIRES</h4>
-                <ul>Laborum similique iusto beatae facere illum architecto reiciendis vero facilis. Assumenda eos rerum obcaecati?</ul>
-            </div>
+            <a href="/about">
+                <div class="icon_1">
+                    <img class="icon" src="{{url_for('static' , filename='images/icon/user-friends.svg')}}">
+                    <h4>ESPACE PARTENAIRES</h4>
+                    <ul>Notre femme de chambre a l'air opaque, nous mettons donc à votre disposition une page spéciale pour faciliter la compréhension de notre travail</ul>
+                </div>
+            </a>
         </div>
     </div>
 </div>
 <div class="service">
     <div class="service_title">notre service</div>
     <div class="service_text">
+        <div class="service_image">
+            <img id="change" src="../static/images/service/1.jpg" style="height: 417px; width: 100%;" >
+        </div>
         <div class="service_text_1">
             <div> 
                 <h3 style="color: gray;">A PROPRE DE NOTRE SERVICE</h3><br>
                 <h2>UN GRANDE SERVICE AVEC GRANDE CAPACITER</h2><br>
-                <ul style="font-size: larger;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iste. Culpa voluptates libero molestiae est unde eos. Eum fugiat error saepe animi, odio natus qui quidem obcaecati, ullam magni quod!</ul>
+                <ul style="font-size: larger;">Peu importe que nous soyons un groupe émergent, mais je suis notre femme de chambre intégrée et soumise au contrôle, tournant autour d'une hiérarchie, dont nous mentionnons</ul>
             </div>
             <div class="point">
-                <h3><li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li></h3>
-                <h3><li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li></h3>
-                <h3><li>Lorem ipsum, dolor sit amet consectetur adipisicing elit</li></h3>
+                <h3>&#10003;informations précitées sont mises à jour quotidiennement</h3>
+                <h3>&#10003;Authentification intégrée pour les informations</h3>
+                <h3>&#10003;Une équipe sous votre encadrement tout au long semaine</h3>
             </div>
-        </div>
-        <div class="service_image">
-            <img id="change" src="../static/images/service/1.jpg" style="height: 417px; width: 100%;" >
         </div>
     </div>
 </div>
@@ -99,7 +108,7 @@
         
         <div class="vedio_tag">
             <div class="vedio_tag_1">
-                <img src="../static/images/tag/2.png">
+                <img src="../static/images/Annonce/M6.jpg">
             </div>
             <div class="vedio_tag_2">
                 <img src="../static/images/tag/2.png">
